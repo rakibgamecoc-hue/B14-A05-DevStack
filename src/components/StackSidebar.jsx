@@ -5,7 +5,7 @@
   onRemoveAll,
 }) {
   return (
-    <aside className="rounded-2xl border border-slate-100 bg-white p-5 shadow-sm lg:sticky lg:top-6">
+    <aside className="rounded-2xl border border-slate-100 bg-white p-5 shadow-sm lg:sticky z-1000 lg:top-6">
       <h2 className="text-base font-semibold text-slate-800">
         Your Stack
       </h2>
