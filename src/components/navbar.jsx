@@ -34,7 +34,7 @@ function Navbar() {
 
         <div className="navbar-end flex gap-2">
            <a className="btn rounded-2xl font-normal bg-gray-100 active:bg-pink-500 hover:bg-pink-500">Sign In</a>
-           <a className="btn rounded-2xl font-normal bg-gray-100 active:bg-pink-500 hover:bg-pink-500">Sign Up</a>
+           <a className="btn rounded-2xl font-normal bg-pink-500 active:bg-pink-500 hover:bg-pink-500">Sign Up</a>
          
         </div>
       </div>

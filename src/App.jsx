@@ -8,29 +8,30 @@ import StackSidebar from "./components/StackSidebar";
 
 function App() {
   const [selectedStack, setSelectedStack] = useState([]);
-
-  // Add technology
   const handleAdd = (tech) => {
     setSelectedStack((prev) => {
-      // Prevent duplicate selections
-      if (prev.some((item) => item.id === tech.id)) {
-        return prev;
-      }
+    
+    if (prev.find((item) => item.id === tech.id)) {
+  return prev;
+}
 
-      return [...prev, tech];
+        return [...prev, tech];
     });
   };
 
-  // Remove one technology
+
   const handleRemove = (id) => {
-    setSelectedStack((prev) =>
-      prev.filter((tech) => tech.id !== id)
+            setSelectedStack((prev) =>
+     
+     
+     
+              prev.filter((tech) => tech.id !== id)
     );
   };
 
-  // Clear the entire stack
-  const handleRemoveAll = () => {
-    setSelectedStack([]);
+
+         const handleRemoveAll = () => {
+       setSelectedStack([]);
   };
 
   return (
