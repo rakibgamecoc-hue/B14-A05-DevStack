@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import TechCard from "./components/TechCard";
 import StackSidebar from "./components/StackSidebar";
 import { ToastContainer, toast } from "react-toastify";
+import Footer from "./components/footer"
 
 function App() {
     const [selectedStack, setSelectedStack] = useState([]);
@@ -97,7 +98,7 @@ function App() {
                 <TechCard
                   key={tech.id}
                           tech={tech}
-                  isSelected={selectedStack.some(
+                              isSelected={selectedStack.some(
                     (item) => item.id === tech.id
                          )}
                   onAdd={handleAdd}
@@ -113,6 +114,8 @@ function App() {
           </div>
                  </div>
       </main>
+
+       <Footer />
     </>
   );
 }
